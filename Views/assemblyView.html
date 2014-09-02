@@ -1,0 +1,15 @@
+
+
+<div class="lineviewer">
+	<div class="lineviewer-content">
+
+		<% _.each(content, function(line, index){ %>
+			<pre><%=start+index+1%> : <%=line%></pre><% }); %>
+
+	</div>
+	<div class="lineviewer-nav">
+		<div class="lineviewer-up">^</div>
+		<button class="lineviewer-button" style="top: <%=scrollbar%>">SS</button>
+		<div class="lineviewer-down">v</div>
+	</div>
+</div>
